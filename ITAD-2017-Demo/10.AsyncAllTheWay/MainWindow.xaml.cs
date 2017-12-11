@@ -4,7 +4,14 @@ using System.Windows;
 namespace AsyncAllTheWay
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// 
+    /// 
+    /// Usage:
+    /// 0. Set this project as StartUp project.
+    /// 1. Start the program (F5). 
+    /// 
+    /// Explaination:
+    /// 
     /// </summary>
     public partial class MainWindow : Window
     {

@@ -7,6 +7,19 @@ namespace ArrayOrList
 {
     class Program
     {
+        /// <summary>
+        /// This example shows that adding elements to an array is faster than adding elements to a list,
+        /// contrary to what you have been told at school :)
+        /// 
+        /// Usage:
+        /// 0. Set this project as StartUp project.
+        /// 1. Hit F5 to run the example. Notice the time it took to execute each operation (in milliseconds).
+        /// 2. Observe that using array takes LESS time than using a list. 
+        /// 
+        /// Explaination: 
+        /// A List in .NET is implemented as an array!
+        /// (see: http://referencesource.microsoft.com/#mscorlib/system/collections/generic/list.cs,cf7f4095e4de7646)
+        /// </summary> 
         static void Main(string[] args)
         {
             int testSize = 1000 * 1000 * 100; // 100 M

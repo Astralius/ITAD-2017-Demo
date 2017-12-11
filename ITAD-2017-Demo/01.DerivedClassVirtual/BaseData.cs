@@ -9,13 +9,16 @@ namespace _1.DerivedClassVirtual
         public BaseData(string data)
         {
             this.data = data;
+
+            // Below will call overriden InitializeState method, if present. Only if there is no override, BaseData.InitializeState() will be called.
             InitializeState();
+
             Console.WriteLine("BaseData created");
         }
 
         public virtual void InitializeState()
         {
-            //basic initialization logic
+            // some basic initialization logic
         }
     }
 
@@ -30,9 +33,12 @@ namespace _1.DerivedClassVirtual
             Console.WriteLine("NetworkData created");
         }
 
+        /// <summary>
+        /// This method will be called polymorphically by the base constructor instead of BaseData.InitializeState()!
+        /// </summary>
         public override void InitializeState()
         {
-            //if (source.Contains("someString"))
+            //if (source.Contains("someString"))    // source is empty until NetworkData constructor returns
             //{
 
             //}

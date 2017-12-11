@@ -5,6 +5,16 @@ namespace _8.YeldFlow
 {
     class Program
     {
+        /// <summary>
+        /// 
+        /// 
+        /// Usage:
+        /// 0. Set this project as StartUp project.
+        /// 1. 
+        /// 
+        /// Explaination:
+        /// 
+        /// </summary> 
         static void Main(string[] args)
         {
             IEnumerable<int> elements = CreateElements("ABC");
@@ -31,6 +41,7 @@ namespace _8.YeldFlow
             {
                 Console.WriteLine("E");
             }
+
             Console.ReadKey();
         }
 

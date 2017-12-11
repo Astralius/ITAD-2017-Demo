@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2010
+VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03b.SensorsManager", "03b.SensorsManager\03b.SensorsManager.csproj", "{CE9352FD-2A2D-4FBA-B7B8-EC64720481F2}"
 EndProject
@@ -23,7 +23,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.TryFinally", "06.TryFina
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.AsyncVoid", "07.AsyncVoid\07.AsyncVoid.csproj", "{FA0DDFC0-B246-4489-919B-14A91422F594}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.YeldFlow", "08.YeldFlow\08.YeldFlow.csproj", "{3DC99521-E8AA-47FE-BD19-619BEB4C4A59}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.YieldFlow", "08.YeldFlow\08.YieldFlow.csproj", "{3DC99521-E8AA-47FE-BD19-619BEB4C4A59}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.MemoryLeak", "09.MemoryLeak\09.MemoryLeak.csproj", "{B269A27B-82E7-4141-BBB5-51BD12C2E52C}"
 EndProject

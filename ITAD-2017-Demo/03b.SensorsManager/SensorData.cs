@@ -15,7 +15,10 @@
             Unit = unit;
         }
 
-        public string ToFormattedString(string format="{0}: {1:0.00} {2}")
+        /// <summary>
+        /// Method using default parameter.
+        /// </summary>
+        public string ToFormattedString(string format="{0}: {1:0.000} {2}")
         {
             return string.Format(format, Name, Val, Unit);
         }

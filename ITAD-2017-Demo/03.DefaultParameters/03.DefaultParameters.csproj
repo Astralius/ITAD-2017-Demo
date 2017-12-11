@@ -33,10 +33,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="SensorDataPresenter">
-      <HintPath>..\SensorDataPresenter\bin\Debug\SensorDataPresenter.dll</HintPath>
+      <HintPath>..\03a.SensorDataPresenter\bin\Debug\SensorDataPresenter.dll</HintPath>
     </Reference>
     <Reference Include="SensorsManager">
-      <HintPath>..\SensorsManager\bin\Debug\SensorsManager.dll</HintPath>
+      <HintPath>..\03b.SensorsManager\bin\Debug\SensorsManager.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
