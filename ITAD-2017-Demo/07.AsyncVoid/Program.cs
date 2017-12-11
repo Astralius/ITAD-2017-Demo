@@ -23,7 +23,7 @@ namespace _7.AsyncVoid
         /// </summary> 
         static void Main(string[] args)
         {
-            CatchException();
+            Program.CatchException();
             Console.ReadKey();
         }
 
@@ -31,8 +31,8 @@ namespace _7.AsyncVoid
         {
             try
             {
-                ThrowExceptionAsyncWrongly();
-                //await ThrowExceptionAsyncCorrectly();
+                Program.ThrowExceptionAsyncWrongly();
+                //await Program.ThrowExceptionAsyncCorrectly();
             }
             catch (Exception)
             {

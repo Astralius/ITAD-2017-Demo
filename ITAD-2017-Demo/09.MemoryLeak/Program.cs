@@ -39,7 +39,7 @@ namespace _9.MemoryLeak
         public static void SimulateWindowCreation()
         {
             var t = new SettingsWindows();
-            settings.OnChange += t.ChangeSettings;
+            settings.OnChanged += t.ChangeSettings;
         }
     }
 }

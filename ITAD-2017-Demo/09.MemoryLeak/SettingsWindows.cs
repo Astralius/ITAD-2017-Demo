@@ -20,7 +20,7 @@ namespace _9.MemoryLeak
             t5 = new int[500000];
             t6 = new int[500000];
         }
-        public event EventHandler OnChange;
+        public event EventHandler OnChanged;
 
         public void ChangeSettings(object s, EventArgs args)
         {

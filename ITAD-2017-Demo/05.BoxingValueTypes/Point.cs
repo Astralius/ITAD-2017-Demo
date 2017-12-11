@@ -7,24 +7,24 @@
 
     internal struct Point : IPoint
     {
-        int _x;
-        int _y;
+        public int X;
+        public int Y;
 
         public Point(int x, int y)
         {
-            _x = x;
-            _y = y;
+            this.X = x;
+            this.Y = y;
         }
 
         public void SetValue(int x, int y)
         {
-            _x = x;
-            _y = y;
+            this.X = x;
+            this.Y = y;
         }
 
         public override string ToString()
         {
-            return string.Format("({0}, {1})", _x.ToString(), _y.ToString());
+            return string.Format("({0}, {1})", X.ToString(), Y.ToString());
         }
     }
 }

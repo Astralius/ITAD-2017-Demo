@@ -25,19 +25,20 @@ namespace _6.TryFinally
         /// </summary> 
         static void Main(string[] args)
         {
-            var result1 = TestFlow1();
+            int result1 = Program.TestFlow1();
             Console.WriteLine($"Result 1: {result1}");
+
             Console.ReadKey(true);
             Console.WriteLine();
 
-            var result2 = TestFlow2(1, 2);
+            int result2 = Program.TestFlow2(1, 2);
             Console.WriteLine($"Result 2: {result2}");
+
             Console.ReadKey(true);
             Console.WriteLine();
 
-            var result3 = TestFlow3("first", "second");
+            StringBuilder result3 = TestFlow3("first", "second");
             Console.WriteLine($"Result 3: {result3}");
-
             Console.ReadKey();
         }
 

@@ -6,8 +6,6 @@ namespace _2.Closure
 {
     class Program
     {
-        // TODO: add Explaination below
-
         /// <summary>
         /// This example shows dangers of passing parameters to anonymous methods in a loop.
         /// 
@@ -21,11 +19,11 @@ namespace _2.Closure
         /// </summary> 
         static void Main(string[] args)
         {
-            TestFor();
+            Program.TestFor();
             Console.ReadKey(true);
 
             Console.WriteLine();
-            TestForeach();
+            Program.TestForeach();
             Console.ReadKey();
         }
 
@@ -38,10 +36,10 @@ namespace _2.Closure
 
             var actionsFor = new List<Action>();
 
-            // Each consecutive number is the value of the same variable (one address in memory)
+            // Each consecutive number is the value of the same variable (one address in memory).
             for (int number = 0; number < 3; ++number)
             {
-                actionsFor.Add(() => Console.WriteLine(number));  // number will be passed by reference rather than by value
+                actionsFor.Add(() => Console.WriteLine(number));  // number will be passed by reference rather than by value.
             }
 
             // Execute all actions

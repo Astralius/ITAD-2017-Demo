@@ -27,7 +27,7 @@ namespace ArrayOrList
             IEnumerable<int> testSet = Enumerable.Range(0, testSize);
 
             Console.WriteLine($"Adding {testSize} elements to array");
-            MeasureAction(() =>
+            Program.MeasureAction(() =>
             {
                 var capacity = 1;
                 var size = 0;
@@ -37,14 +37,14 @@ namespace ArrayOrList
                 {
                     if (size == arrayToMeasure.Length)
                     {
-                        ResizeArray(ref capacity, ref arrayToMeasure);
+                        Program.ResizeArray(ref capacity, ref arrayToMeasure);
                     }
                     arrayToMeasure[size++] = testItem;
                 }
             });
 
             Console.WriteLine($"Adding {testSize} elements to list");
-            MeasureAction(() =>
+            Program.MeasureAction(() =>
             {
                 var listToMeasure = new List<int>(1);
 

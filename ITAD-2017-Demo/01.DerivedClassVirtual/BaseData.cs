@@ -11,14 +11,14 @@ namespace _1.DerivedClassVirtual
             this.data = data;
 
             // Below will call overriden InitializeState method, if present. Only if there is no override, BaseData.InitializeState() will be called.
-            InitializeState();
+            this.InitializeState();
 
             Console.WriteLine("BaseData created");
         }
 
         public virtual void InitializeState()
         {
-            // some basic initialization logic
+            // Some basic initialization logic.
         }
     }
 

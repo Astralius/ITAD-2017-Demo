@@ -4,15 +4,15 @@
     {
         public string Name { get; }
 
-        public double Val { get; }
+        public double Value { get; }
 
         public string Unit { get; }
 
-        public SensorData(string name, double val, string unit)
+        public SensorData(string name, double value, string unit)
         {
-            Name = name;
-            Val = val;
-            Unit = unit;
+            this.Name = name;
+            this.Value = value;
+            this.Unit = unit;
         }
 
         /// <summary>
@@ -20,7 +20,7 @@
         /// </summary>
         public string ToFormattedString(string format="{0}: {1:0.000} {2}")
         {
-            return string.Format(format, Name, Val, Unit);
+            return string.Format(format, this.Name, this.Value, this.Unit);
         }
     }
 }

@@ -23,7 +23,7 @@ namespace _3.DefaultParameters
         /// </summary> 
         static void Main(string[] args)
         {
-            // Below objects' classes are defined in two separate assemblies (SensorsManager.SensorData & SensorDataPresenter.ConsolePresenter)
+            // Below objects' classes are defined in two separate assemblies (SensorsManager.SensorData & SensorDataPresenter.ConsolePresenter).
             var speed = new SensorData("Depth", 15.1234, "meters");     
             var presenter = new ConsolePresenter();
             
